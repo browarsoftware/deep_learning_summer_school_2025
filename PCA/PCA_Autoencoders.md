@@ -73,7 +73,7 @@ PCA reduces the dimensionality of multivariate data, to two or three that can be
 
 ### Covariance analysis
 
-Example numerical dataset:
+Example numerical dataset (decathlon):
 
 ![img.png](images/cov_analysis_data.png)
 
@@ -85,6 +85,7 @@ Covariance analysis:
 
 Source: [link](https://www.sthda.com/english/wiki/wiki.php?id_contents=7851)
 
+Correlation between strength training and high jumps [link](https://www.youtube.com/watch?v=4qKY6JLm-3s) :-)
 
 ### Dimensionality reduction
 
@@ -274,13 +275,22 @@ Source: [link](https://mgv.sggw.edu.pl/article/view/5248)
 
 [Eigenfaces-Based Steganography](https://github.com/browarsoftware/EigenfacesSteganography)
 
+## Interesting problems
+
+- Examine the stability of deep autoencoders and convolutional autoencoders with a fixed network topology: are the anomalies found for the CREDO dataset identical? How much do they differ from each other?
+- Examine the stability of deep autoencoders for different bottleneck sizes: are the anomalies found for the CREDO dataset identical? How much do they differ from each other?
+
 ## References
+
+
 
 [FactoMineR and factoextra : Principal Component Analysis Visualization - R software and data mining](https://www.sthda.com/english/wiki/wiki.php?id_contents=7851)
 
 [CREDO science website](https://credo.science/)
 
 [Introduction to Variational Autoencoders Using Keras](https://www.assemblyai.com/blog/introduction-to-variational-autoencoders-using-keras)
+
+[Hachaj et. al, Towards detection of anomalous cosmic ray signals for observations acquired from Cosmic Ray Extremely Distributed Observatory mobile detectors](https://www.sciencedirect.com/science/article/abs/pii/S0952197625021177)
 
 [Piekarczyk, M.; Hachaj, T. On the Search for Potentially Anomalous Traces of Cosmic Ray Particles in Images Acquired by Cmos Detectors for a Continuous Stream of Emerging Observational Data. Sensors 2024, 24, 1835. https://doi.org/10.3390/s24061835](https://www.mdpi.com/1424-8220/24/6/1835)
 
