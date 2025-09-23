@@ -2,6 +2,10 @@
 
 ### Author: Tomasz Hachaj
 
+### Link to this presentation, source codes and data 
+
+![images/qr_code.JPG](images/qr_code.JPG)
+
 ## Scope
 
 We will discuss the application of PCA and autoencoder neural networks in cases where we want to perform feature extraction and analysis of image sets that:
