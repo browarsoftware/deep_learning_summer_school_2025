@@ -2,13 +2,17 @@
 
 ### Author: Tomasz Hachaj
 
+### Link to this presentation 
+
+![images/qr_code.JPG](img/qr_code.JPG)
+
 ## Scope
 
-In this lecture, we will learn the basics of reinforcement learning and how to prepare a training environment for agents in Unity. We will use a virtual distance sensor and a virtual vision sensor (camera). We will explain the neural network that controls the ML agent using the Grad-CAM algorithm.
+In this lecture, we will remind the basics of reinforcement learning and how to prepare a training environment for agents in Unity. We will use a virtual distance sensor and a virtual vision sensor (camera). We will explain the neural network that controls the ML agent using the Grad-CAM algorithm and CART (Classification And Regression Tree).
 
 The approach we will discuss is worth using when:
 - We want to prototype and test machine learning algorithms based on reinforcement learning in a 3D environment;
-- We accept simplifications and numerical errors in the simulation of physical laws that occur in graphics engines.
+- We accept simplifications and numerical errors in the simulation of physical laws that occur in graphics game engines.
 
 
 Source codes for explanation of  machine learning agents trained with Proximal Policy Optimization that utilizes visual sensor data can be found here: [link](https://github.com/browarsoftware/ppo_explanation)
@@ -32,9 +36,9 @@ RL algorithms are divided into many classes. If the agent has access to (or lear
 Within model-free algorithms, Q-Learning approaches are popular, in which the approximation $Q_{\theta}(s,a)$ (the value of the action-state pair function (On-Policy Action-Value Function)) and strategy optimization (Policy Optimization) are calculated.
 
 ![rl_algorithms_9_15.svg](img/rl_algorithms_9_15.svg)
-Źródło rysunku [link](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html)
+Image source [link](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html)
 
-In algorithms from the policy optimization of parameters of neural network $\phi$ is performed directly by the gradient algorithm based on the largest gradient increase (gradient ascent) relative to $J(\pi_{\theta})$ (the expected value of the strategy $\pi$) or its local approximation.
+In algorithms from the policy optimization group, parameters of neural network $\phi$ are learned directly by the gradient algorithm based on the largest gradient increase (gradient ascent) relative to $J(\pi_{\theta})$ (the expected value of the strategy $\pi$) or its local approximation.
 
 This optimization is almost always performed based on the value of the state function, so that each update uses only data collected during operation according to the latest state. State optimization usually also involves learning the approximator $V_{\phi}(s)$, which is used to determine how to update the state (s is a state).
 
@@ -60,7 +64,7 @@ Other materials worth reading: [link1](https://spinningup.openai.com/en/latest/s
 
 ### Configuring the Python and Unity environment
 
-Installation: Windows 11 OS, Python 3.9, torch 2.2.2, numpy 1.23.5, mlagents-envs 0.3, mlagents 0.3, onnx 1.16.2. Then downgrade protobuf to version 3.20.0. The version presented here is different from [Al-agents Installation](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Installation.md), but it works :-)
+Installation: Windows 11 OS / macOS X 11+ / Ubuntu 24.04, Unity 2021.3.18f1+, Python 3.9, torch 2.2.2, numpy 1.23.5, mlagents-envs 0.3, mlagents 0.3, onnx 1.16.2 (downgrade protobuf to version 3.20.0!). The version presented here is different from [Al-agents Installation](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Installation.md), but it works :-)
 
 To test if the installation works, run (in the Python environment installation directory):
 
