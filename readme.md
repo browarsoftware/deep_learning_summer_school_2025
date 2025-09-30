@@ -8,5 +8,5 @@ The following materials for classes presented at [Deep Learning Summer School - 
 
 [Image features extraction: from Principal Components Analysis to Deep Autoencoders](PCA/PCA_Autoencoders.md)
 
-[RL/Reinforcementlearning.md](PCA/PCA_Autoencoders.md)
+[Application of reinforcement learning in agent-based modelling-Machine learning in 3D Unity environment](RL/Reinforcementlearning.md)
 
